@@ -39,6 +39,8 @@ while True:
 	if mover[-1] == 0 and mover[-2] == 1:
 		time.append(datetime.now())
 
+	cv2.imshow("Gray Frame", gray)
+	cv2.imshow("Difference Frame", diff_frame)
 	cv2.imshow("Color Frame", frame)
 	key = cv2.waitKey(1)
 	if key == ord('q'):
